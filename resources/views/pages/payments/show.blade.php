@@ -4,6 +4,13 @@
 @section('content')
     <div class="container py-4">
         <div class="row justify-content-center">
+            <div class="page-header">
+                <div class="header-left" onclick="history.back()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </div>
+            </div>
             <div class="col-md-8">
                 <div class="card shadow-sm">
                     <!-- Başlık -->

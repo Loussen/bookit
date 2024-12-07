@@ -26,6 +26,7 @@ class RoomSeeder extends Seeder
                     'description' => $faker->paragraphs(2, true),
                     'price' => $faker->numberBetween(100, 1000),
                     'capacity' => $faker->numberBetween(1, 6),
+                    'bed_type' => $faker->randomElement(['Single', 'Double']),
                     'is_available' => $faker->boolean(80), // 80% chance of being available
                 ]);
             }

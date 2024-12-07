@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->decimal('price', 10, 2);
             $table->integer('capacity');
-            $table->string('bed_type');
+            $table->string('bed_type')->nullable();
             $table->boolean('is_available')->default(true);
             $table->timestamps();
         });

@@ -7,7 +7,7 @@ use App\Http\Controllers\{
     PaymentController
 };
 
-Route::get('/', [HotelController::class, 'index']);
+Route::get('/', [HotelController::class, 'index'])->name('hotels.index');
 
 Route::prefix('hotels')->name('hotels.')->group(function () {
     Route::get('/{hotel}', [HotelController::class, 'show'])->name('show');

@@ -30,6 +30,7 @@ class ReservationSeeder extends Seeder
                     'client_phone' => $faker->phoneNumber,
                     'check_in' => $checkIn,
                     'check_out' => $checkOut,
+                    'guest_count' => $faker->numberBetween(1, 6),
                     'total_price' => $faker->numberBetween(200, 2000),
                     'status' => $faker->randomElement(['pending', 'approved', 'paid', 'rejected', 'cancelled']),
                     'notes' => $faker->optional(0.7)->sentence, // 70% chance of having notes
