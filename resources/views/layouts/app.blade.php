@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Telebook')</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="{{ asset('js/telegram-web-app.js') }}"></script>
     <style>
         :root {
             --tg-theme-bg-color: var(--tg-theme-bg-color, #fff);

@@ -63,6 +63,8 @@
                 tg.ready();
                 tg.expand();
 
+                tg.setBackgroundColor('#1C1C1D');
+
                 // Otel kartlarına tıklama olayı
                 document.querySelectorAll('.hotel-card').forEach(card => {
                     card.addEventListener('click', function() {
